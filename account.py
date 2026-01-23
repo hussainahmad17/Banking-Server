@@ -6,12 +6,12 @@ class Account(ABC):
         self._account_number = account_number
         self._balance = balance
 
-    @abstractmethod
     def deposit(self, amount):
         if amount < 0:
             raise ValueError("Deposit amount must be positive")
         self._balance += amount
 
+    @abstractmethod
     def withdraw(self, amount):
         pass
 
