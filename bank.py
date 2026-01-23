@@ -16,6 +16,3 @@ class Bank:
             
     def total_balance(self):
         return sum(account.balance for account in self._accounts)
-
-    def get_accounts(self):
-        return self._accounts

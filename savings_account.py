@@ -1,7 +1,6 @@
 from account import Account
 from dataclasses import dataclass
 
-# adding dataclass here
 @dataclass
 class SavingsAccount(Account):
     interest_rate: float = 0.02 
