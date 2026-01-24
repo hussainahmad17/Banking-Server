@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class SavingsAccount(Account):
-    interest_rate: float = 0.02 
+    interest_rate: float = 0.02
 
     def withdraw(self, amount):
         if amount > self._balance:
