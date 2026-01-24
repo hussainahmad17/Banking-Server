@@ -13,6 +13,7 @@ class Bank:
         for account in self._accounts:
             if account.account_number == account_number:
                 return account
+        return None
             
     def total_balance(self):
-        return sum(account.balance for account in self._accounts)
+        return sum(account.get_balance() for account in self._accounts)

@@ -16,11 +16,11 @@ def main():
     savings.withdraw(200)
     savings.add_interest()
 
-    current.withdraw(3000)
+    current.withdraw(1000)
 
     print("Savings Account Balance:", savings.get_balance())
     print("Current Account Balance:", current.get_balance())
-    print("Total Bank Balance:", bank.total_bank_balance())
+    print("Total Bank Balance:", bank.total_balance())
 
 if __name__ == "__main__":
     main()
