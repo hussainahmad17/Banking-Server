@@ -1,3 +1,4 @@
+# Define a Bank class to manage multiple accounts
 class Bank:
     def __init__(self, name):
         self._name = name
