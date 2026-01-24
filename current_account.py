@@ -6,7 +6,7 @@ from account import Account
 class CurrentAccount(Account):
     overdraft_Limit: float = 500.0
 
-    def withdraw(self, amount):
+    def withdraw(self, amount: float):
         if amount > self._balance + self.overdraft_Limit:
             raise ValueError("Withdrawal exceeds overdraft limit")
         self._balance -= amount
