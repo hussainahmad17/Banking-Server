@@ -1,8 +1,6 @@
 from account import Account
 from dataclasses import dataclass
 
-
-
 # Define a SavingsAccount class that inherits from Account
 @dataclass
 class SavingsAccount(Account):
